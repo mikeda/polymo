@@ -1,0 +1,17 @@
+fragment Profile on Profile {
+  id
+  name
+  image
+}
+
+query getProfile {
+  getProfile {
+    ...Profile
+  }
+}
+
+mutation updateProfile($input: ProfileInput!) {
+  updateProfile(input: $input) {
+    ...Profile
+  }
+}
