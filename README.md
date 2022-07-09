@@ -77,7 +77,7 @@ Please sign up / in with GitHub oAuth.
 npm run crud
 ```
 
-Enter a model name and attributes names.
+Enter a model name and attributes.
 
 ```
 Please enter a model name. todo

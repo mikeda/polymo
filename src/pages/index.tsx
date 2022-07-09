@@ -195,7 +195,6 @@ const Page = (): JSX.Element => {
             <Stack>
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">Getting Started</h3>
-                <p>Why dont you start dev day with Polymo.</p>
               </Stack>
               <Stack>
                 <Tutorial
@@ -288,7 +287,7 @@ const Page = (): JSX.Element => {
                       <SyntaxHighlighter style={solarizedLight} language="bash">
                         {tutorialCode6_1.trim()}
                       </SyntaxHighlighter>
-                      <p>Enter a model name and attributes names.</p>
+                      <p>Enter a model name and attributes.</p>
                       <SyntaxHighlighter style={solarizedLight} language="bash">
                         {tutorialCode6_2.trim()}
                       </SyntaxHighlighter>
