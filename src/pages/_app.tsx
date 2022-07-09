@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppPropsWith
   return getLayout(
     <SessionProvider session={session}>
       <Head>
-        <title>Polymo — Build web app with Next.js boilerplate</title>
+        <title>Polymo — Boilerplate and CRUD scaffolding for Next.js</title>
         <meta property="og:url" content="https://polymo.dev" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Polymo" />

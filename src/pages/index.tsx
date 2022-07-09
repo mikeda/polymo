@@ -179,7 +179,9 @@ const Page = (): JSX.Element => {
             <Stack>
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">CRUD scaffolding</h3>
-                <p>You can build CRUD view and form and GraphQL server / client codes.</p>
+                <p>
+                  You can build CRUD view and form and GraphQL server / client codes with <Link href="https://github.com/cats-oss/scaffdog">scaffdog</Link>.
+                </p>
               </Stack>
               <Stack>
                 <SyntaxHighlighter style={arduinoLight} className="rounded-xl p-4" language="bash">
