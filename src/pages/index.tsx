@@ -259,6 +259,11 @@ const Page = (): JSX.Element => {
                       <SyntaxHighlighter style={solarizedLight} language="bash">
                         {tutorialCode4.trim()}
                       </SyntaxHighlighter>
+                      <p>
+                        Please show your web app.
+                        <br />
+                        <Link href="http://localhost:3000">http://localhost:3000</Link>
+                      </p>
                     </>
                   }
                 />
@@ -267,7 +272,9 @@ const Page = (): JSX.Element => {
                   description={
                     <>
                       <p>
-                        Please <Link href="/auth/signin">sign up / in</Link> with GitHub oAuth.
+                        Please sign up / in with GitHub oAuth.
+                        <br />
+                        <Link href="http://localhost:3000/auth/signin">http://localhost:3000/auth/signin</Link>
                       </p>
                     </>
                   }
@@ -304,9 +311,9 @@ const Page = (): JSX.Element => {
                   description={
                     <>
                       <p>
-                        Show <Link href="/todos">CRUD page</Link>.
+                        Please restart app and show your CRUD page.
                         <br />
-                        Note: Please restart app server.
+                        <Link href="http://localhost:3000/todos">http://localhost:3000/todos</Link>
                       </p>
                     </>
                   }

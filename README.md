@@ -61,9 +61,15 @@ npm install
 npm run dev
 ```
 
+Please show your web app.
+<br>
+[http://localhost:3000](http://localhost:3000)
+
 ### 5. Sign up / in this wep app with GitHub oAuth
 
-Please [sign up / in](/auth/signin) with GitHub oAuth.
+Please sign up / in with GitHub oAuth.
+<br>
+[http://localhost:3000/auth/signin](http://localhost:3000/auth/signin)
 
 ### 6. Generate CRUD code
 
@@ -89,9 +95,9 @@ npx prisma db push
 
 ### 8. Check CRUD page
 
-Show [CRUD page](/todos).
+Please restart app and show your CRUD page.
 <br>
-Note: Please restart app server.
+[http://localhost:3000/todos](http://localhost:3000/todos)
 
 ## Support
 
