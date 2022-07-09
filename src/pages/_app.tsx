@@ -2,6 +2,7 @@ import { ReactElement, ReactNode } from "react";
 
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 
 import { SessionProvider } from "next-auth/react";
 
@@ -20,6 +21,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppPropsWith
 
   return getLayout(
     <SessionProvider session={session}>
+      <Head>
+        <title>Polymo — Build web app with Next.js boilerplate</title>
+        <meta property="og:url" content="https://polymo.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Polymo" />
+        <meta property="og:description" content="Polymo is a simple boilerplate and CRUD scaffolding for Next.js with TypeScript." />
+        <meta property="og:site_name" content="Polymo" />
+        <meta property="og:image" content="https://polymo.dev/favicon.ico" />
+      </Head>
       <Component {...pageProps} />
     </SessionProvider>
   );
