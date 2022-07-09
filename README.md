@@ -1,13 +1,13 @@
-This is a [Kumuto](https://kumi.dev).
+This is a [Polymo](https://polymo.dev).
 <br>
-Kumuto is a simple boilerplate and CRUD scaffolding for Next.js with TypeScript.
+Polymo is a simple boilerplate and CRUD scaffolding for Next.js with TypeScript.
 
 ## Getting Started
 
-### 1. Clone Kumuto from GitHub
+### 1. Get Polymo from GitHub
 
 ```
-curl -L https://github.com/andraindrops/kumuto/archive/refs/tags/0.0.1.tar.gz | tar xvf -
+curl -L https://github.com/andraindrops/polymo/archive/refs/tags/0.0.1.tar.gz | tar xvf -
 ```
 
 ### 2. Setup env files

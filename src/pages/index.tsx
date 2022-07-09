@@ -29,8 +29,8 @@ const featureCode1_2 = `
 `;
 
 const tutorialCode1 = `
-curl -L https://github.com/andraindrops/kumuto/archive/refs/tags/0.0.1.tar.gz | tar xvf -
-cd kumuto-0.0.1
+curl -L https://github.com/andraindrops/polymo/archive/refs/tags/0.0.1.tar.gz | tar xvf -
+cd polymo-0.0.1
 `;
 
 const tutorialCode2 = `
@@ -110,16 +110,16 @@ const Page = (): JSX.Element => {
     <Layout>
       <Stack className="py-32">
         <img src="/index/kv.svg" alt="kv" className="mx-auto max-h-60" />
-        <h1 className="mt-8 text-6xl font-bold">Kumuto</h1>
+        <h1 className="mt-8 text-6xl font-bold">Polymo</h1>
         <Stack className="mt-8">
           <h2 className="text-2xl">
-            Hi, Kumuto is a simple <span className="font-bold">boilerplate</span> and <span className="font-bold">CRUD scaffolding</span> for Next.js with TypeScript.
+            Hi, Polymo is a simple <span className="font-bold">boilerplate</span> and <span className="font-bold">CRUD scaffolding</span> for Next.js with TypeScript.
           </h2>
           <Stack>
             <Stack>
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">GitHub</h3>
-                <Link href="https://github.com/andraindrops/kumuto">https://github.com/andraindrops/kumuto</Link>
+                <Link href="https://github.com/andraindrops/polymo">https://github.com/andraindrops/polymo</Link>
               </Stack>
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">Boilerplate</h3>
@@ -193,11 +193,11 @@ const Page = (): JSX.Element => {
             <Stack>
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">Getting Started</h3>
-                <p>Why dont you start Kumuto dev day.</p>
+                <p>Why dont you start dev day with Polymo.</p>
               </Stack>
               <Stack>
                 <Tutorial
-                  title="1. Clone Kumuto from GitHub"
+                  title="1. Get Polymo from GitHub"
                   description={
                     <>
                       <SyntaxHighlighter style={solarizedLight} language="bash">
@@ -317,7 +317,7 @@ const Page = (): JSX.Element => {
               <Stack className="gap-2">
                 <h3 className="text-xl font-bold">Support</h3>
                 <p>
-                  We can help you, Please contact <Link href="https://github.com/andraindrops/kumuto">GitHub</Link> or <Link href="https://twitter.com/kumuto_dev">Twitter</Link>.
+                  We can help you, Please contact <Link href="https://github.com/andraindrops/polymo">GitHub</Link> or <Link href="https://twitter.com/polymo_dev">Twitter</Link>.
                 </p>
               </Stack>
             </Stack>

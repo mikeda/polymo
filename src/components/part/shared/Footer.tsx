@@ -10,18 +10,18 @@ export const Footer = () => {
       <div className="mx-auto flex max-w-screen-sm justify-center p-4">
         <Stack>
           <div className="flex justify-center gap-6">
-            <Link href="https://github.com/andraindrops/kumuto">
+            <Link href="https://github.com/andraindrops/polymo">
               <a>
                 <FaGithub size="2em" />
               </a>
             </Link>
-            <Link href="https://twitter.com/kumuto_dev">
+            <Link href="https://twitter.com/polymo_dev">
               <a>
                 <FaTwitter size="2em" />
               </a>
             </Link>
           </div>
-          <div>&copy; Kumuto 2022 All Rights Reserved.</div>
+          <div>&copy; Polymo 2022 All Rights Reserved.</div>
         </Stack>
       </div>
     </div>
