@@ -16,3 +16,26 @@ type Query {
 type Mutation {
   updateProfile(input: ProfileInput!): Profile!
 }
+
+type Todo {
+  id: String!
+  userId: String!
+  title: String!
+  priority: Int!
+}
+
+input TodoInput {
+  title: String!
+  priority: Int!
+}
+
+type Query {
+  getTodos: [Todo!]!
+  getTodo(id: String!): Todo!
+}
+
+type Mutation {
+  createTodo(input: TodoInput!): Todo!
+  updateTodo(id: String!, input: TodoInput!): Todo!
+  deleteTodo(id: String!): Todo!
+}

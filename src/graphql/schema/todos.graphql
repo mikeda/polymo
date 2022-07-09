@@ -1,0 +1,36 @@
+fragment Todo on Todo {
+  id
+  userId
+  title
+  priority
+}
+
+query getTodos {
+  getTodos {
+    ...Todo
+  }
+}
+
+query getTodo($id: String!) {
+  getTodo(id: $id) {
+    ...Todo
+  }
+}
+
+mutation createTodo($input: TodoInput!) {
+  createTodo(input: $input) {
+    ...Todo
+  }
+}
+
+mutation updateTodo($id: String!, $input: TodoInput!) {
+  updateTodo(id: $id, input: $input) {
+    ...Todo
+  }
+}
+
+mutation deleteTodo($id: String!) {
+  deleteTodo(id: $id) {
+    ...Todo
+  }
+}

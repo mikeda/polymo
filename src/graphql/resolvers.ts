@@ -20,3 +20,31 @@ resolvers.Mutation.updateProfile = async (_parent, args, _context) => {
   const data = await updateProfile(_context.req, args);
   return data;
 };
+
+// eslint-disable-next-line import/order
+import { getTodos, getTodo, createTodo, updateTodo, deleteTodo } from "@/graphql/resolvers/todos";
+
+resolvers.Query.getTodos = async (_parent, args, _context) => {
+  const data = await getTodos(_context.req);
+  return data;
+};
+
+resolvers.Query.getTodo = async (_parent, args, _context) => {
+  const data = getTodo(_context.req, args);
+  return data;
+};
+
+resolvers.Mutation.createTodo = async (_parent, args, _context) => {
+  const data = await createTodo(_context.req, args);
+  return data;
+};
+
+resolvers.Mutation.updateTodo = async (_parent, args, _context) => {
+  const data = await updateTodo(_context.req, args);
+  return data;
+};
+
+resolvers.Mutation.deleteTodo = async (_parent, args, _context) => {
+  const data = await deleteTodo(_context.req, args);
+  return data;
+};

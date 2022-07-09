@@ -16,12 +16,31 @@ export type Scalars = {
 
 export type Mutation = {
   __typename?: 'Mutation';
+  createTodo: Todo;
+  deleteTodo: Todo;
   updateProfile: Profile;
+  updateTodo: Todo;
+};
+
+
+export type MutationCreateTodoArgs = {
+  input: TodoInput;
+};
+
+
+export type MutationDeleteTodoArgs = {
+  id: Scalars['String'];
 };
 
 
 export type MutationUpdateProfileArgs = {
   input: ProfileInput;
+};
+
+
+export type MutationUpdateTodoArgs = {
+  id: Scalars['String'];
+  input: TodoInput;
 };
 
 export type Profile = {
@@ -39,6 +58,26 @@ export type ProfileInput = {
 export type Query = {
   __typename?: 'Query';
   getProfile: Profile;
+  getTodo: Todo;
+  getTodos: Array<Todo>;
+};
+
+
+export type QueryGetTodoArgs = {
+  id: Scalars['String'];
+};
+
+export type Todo = {
+  __typename?: 'Todo';
+  id: Scalars['String'];
+  priority: Scalars['Int'];
+  title: Scalars['String'];
+  userId: Scalars['String'];
+};
+
+export type TodoInput = {
+  priority: Scalars['Int'];
+  title: Scalars['String'];
 };
 
 
@@ -111,25 +150,34 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
+  Int: ResolverTypeWrapper<Scalars['Int']>;
   Mutation: ResolverTypeWrapper<{}>;
   Profile: ResolverTypeWrapper<Profile>;
   ProfileInput: ProfileInput;
   Query: ResolverTypeWrapper<{}>;
   String: ResolverTypeWrapper<Scalars['String']>;
+  Todo: ResolverTypeWrapper<Todo>;
+  TodoInput: TodoInput;
 };
 
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = {
   Boolean: Scalars['Boolean'];
+  Int: Scalars['Int'];
   Mutation: {};
   Profile: Profile;
   ProfileInput: ProfileInput;
   Query: {};
   String: Scalars['String'];
+  Todo: Todo;
+  TodoInput: TodoInput;
 };
 
 export type MutationResolvers<ContextType = any, ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation']> = {
+  createTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationCreateTodoArgs, 'input'>>;
+  deleteTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationDeleteTodoArgs, 'id'>>;
   updateProfile?: Resolver<ResolversTypes['Profile'], ParentType, ContextType, RequireFields<MutationUpdateProfileArgs, 'input'>>;
+  updateTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationUpdateTodoArgs, 'id' | 'input'>>;
 };
 
 export type ProfileResolvers<ContextType = any, ParentType extends ResolversParentTypes['Profile'] = ResolversParentTypes['Profile']> = {
@@ -141,11 +189,22 @@ export type ProfileResolvers<ContextType = any, ParentType extends ResolversPare
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getProfile?: Resolver<ResolversTypes['Profile'], ParentType, ContextType>;
+  getTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<QueryGetTodoArgs, 'id'>>;
+  getTodos?: Resolver<Array<ResolversTypes['Todo']>, ParentType, ContextType>;
+};
+
+export type TodoResolvers<ContextType = any, ParentType extends ResolversParentTypes['Todo'] = ResolversParentTypes['Todo']> = {
+  id?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  priority?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  title?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  userId?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type Resolvers<ContextType = any> = {
   Mutation?: MutationResolvers<ContextType>;
   Profile?: ProfileResolvers<ContextType>;
   Query?: QueryResolvers<ContextType>;
+  Todo?: TodoResolvers<ContextType>;
 };
 

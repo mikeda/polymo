@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { arduinoLight, solarizedLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -109,6 +110,15 @@ const Page = (): JSX.Element => {
   return (
     <Layout>
       <Stack className="py-32">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-M5342QWXSE" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M5342QWXSE');
+          `}
+        </Script>
         <img src="/index/kv.svg" alt="kv" className="mx-auto max-h-60" />
         <h1 className="mt-8 text-6xl font-bold">Polymo</h1>
         <Stack className="mt-8">
