@@ -1,6 +1,6 @@
 This is a [Polymo](https://polymo.dev).
 <br>
-Polymo is a simple boilerplate and CRUD scaffolding for Next.js with TypeScript.
+Polymo is a web app boilerplate and CRUD scaffolding for Next.js with TypeScript.
 
 ## Getting Started
 

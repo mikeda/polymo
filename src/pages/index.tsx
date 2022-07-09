@@ -113,7 +113,7 @@ const Page = (): JSX.Element => {
         <h1 className="mt-8 text-6xl font-bold">Polymo</h1>
         <Stack className="mt-8">
           <h2 className="text-2xl">
-            Hi, Polymo is a simple <span className="font-bold">boilerplate</span> and <span className="font-bold">CRUD scaffolding</span> for Next.js with TypeScript.
+            Hi, Polymo is a web app <span className="font-bold">boilerplate</span> and <span className="font-bold">CRUD scaffolding</span> for Next.js with TypeScript.
           </h2>
           <Stack>
             <Stack>
