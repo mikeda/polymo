@@ -30,12 +30,12 @@ How to get GitHub ID and Secret code?
 <br>
 Homepage URL:
 <br>
-http://localhost:3000
+`http://localhost:3000`
 <br>
 <br>
 Callback URL:
 <br>
-http://localhost:3000/api/auth/callback
+`http://localhost:3000/api/auth/callback`
 <br>
 <br>
 Webhook:
@@ -101,4 +101,4 @@ Please restart app and show your CRUD page.
 
 ## Support
 
-We can help you, Please contact [Twitter]() or [Discord]().
+We can help you, Please contact [GitHub](https://github.com/andraindrops/polymo) or [Twitter](https://twitter.com/polymo_dev).
